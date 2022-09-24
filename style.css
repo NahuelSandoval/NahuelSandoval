@@ -1,0 +1,23 @@
+/* home para movil------------------- */
+.contenido{
+background-color: brown;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: stretch;
+height: 100vh;
+}
+.seccion{
+    background-color: gray;
+    height: 25%;
+    margin: 1rem;
+}
+.aside{
+    background-color: aquamarine;
+    height: 25%;
+    margin: 1rem;
+}
+.pie{
+    background-color: blueviolet;
+    height: 50px;
+}

@@ -1,38 +1,43 @@
 /* home para movil------------------- */
-.contenido{
-    background: rgb(195,42,34);
-    background: linear-gradient(257deg, rgba(195,42,34,0.87718837535014) 42%, rgba(0,255,4,1) 100%);
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: stretch;
+.contenido {
+    background: rgb(195, 42, 34);
+    background: linear-gradient(257deg, rgba(195, 42, 34, 0.87718837535014) 42%, rgba(0, 255, 4, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
 }
-h2{
+
+h2 {
     text-align: center;
     font-size: 3rem;
     color: green;
     text-shadow: 15px 15px 15px greenyellow;
 }
-h3{
+
+h3 {
     text-align: center;
     font-size: 1.5rem;
     color: black;
     text-shadow: 15px 15px 15px black;
 }
-.seccion{
+
+.seccion {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem;
     text-align: center;
 }
-.aside{
+
+.aside {
     margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.pie{
+
+.pie {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -41,25 +46,104 @@ h3{
     padding: 5px;
     font-size: 1rem;
 }
-.linkdelpie{
-display: flex;
-flex-direction: row;
+
+.linkdelpie {
+    display: flex;
+    flex-direction: row;
 }
+
 /* logo y links----------- */
-.logoimg{
+.logoimg {
     width: 2rem;
     height: 2rem;
 }
-.logo{
+
+.logo {
     padding: 5px;
     border-radius: 5px;
 }
+
 /* imagenes de portada------------- */
-.imagenes{
+.imagenes {
     width: 80%;
     height: 40%;
 }
-.imagenescarru{
-height: 80%;
-width: 40%;
+
+.imagenescarru {
+    height: 80%;
+    width: 40%;
+}
+
+p {
+    font-size: 25px;
+}
+
+/* tablets 768--------------- */
+@media(min-width:768px) {
+    h2 {
+        color: black;
+        padding-top: 1rem;
+    }
+
+    h3 {
+        font-size: 30px;
+        text-shadow: 15px 15px 15px greenyellow;
+    }
+
+    .imagenes {
+        box-shadow: 10px 10px 10px black;
+        border-radius: 20px;
+    }
+.seccion.uno{
+    flex-direction: row;
+}
+.seccion.dos{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.seccion.tres{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imagenes{
+    width: 50%;
+}
+    p {
+        font-size: 20px;
+    }
+}
+
+/* pantallas    min-992 */
+@media(min-width:992px) {
+    .principal{
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: 
+"griduno giddos"
+"gridtres aside"
+;
+    }
+    .griduno{
+        display: flex;
+        flex-direction: column;
+    }
+    .griddos{
+        display: flex;
+        flex-direction: column;        
+    }
+    .gridtres{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .seccion{
+        text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .imagenes{
+        width: 80%;
+        height: 80%;
+    }
 }

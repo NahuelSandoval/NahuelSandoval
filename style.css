@@ -6,20 +6,31 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: stretch;
-
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+    color: green;
+    text-shadow: 15px 15px 15px greenyellow;
+}
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-shadow: 15px 15px 15px black;
 }
 .seccion{
-    background-color: gray;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem;
+    text-align: center;
 }
 .aside{
-    background-color: aquamarine;
     margin: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .pie{
     display: flex;
@@ -49,6 +60,6 @@ flex-direction: row;
     height: 40%;
 }
 .imagenescarru{
-height: 480%;
+height: 80%;
 width: 40%;
 }

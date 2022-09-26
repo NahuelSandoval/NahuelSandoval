@@ -258,6 +258,10 @@ legend{
         background-color: yellow;
         color: black;
     }
+    textarea {
+        width: 30rem;
+        font-size: 20px;
+    }
 }
 
 /*-------------pantallas------------- */
